@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    background: #181818;
+    color: #fff;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+#left{
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#right{
+    flex: 1;
+}
+
+/* Sign-In forms */
+#sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#sign-in form{
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#sign-in .logo{
+    margin-bottom: 0.6vh;
+}
+
+#sign-in .logo img{
+    width: 150px;
+    color: blue;
+}
+
+#sign-in label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500px;
+}
+
+#sign-in .text-input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: black;
+    border: #fff 1px solid;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+
+}
+
+#sign-in .primary-btn{
+    width: 100%
+}
+
+/* The primary button */
+.primary-btn{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: rgb(167, 167, 236);
+    color: azure;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.5s;
+
+}
+
+.secondary-btn:hover{
+    background-color: rgb(163, 226, 241);
+}
+
+#sign-in .secondary-btn{
+    width: 100%
+}
+
+#sign-in .links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+
+#sign-in .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#sign-in .or .bar {
+    flex:auto;
+    border: none;
+    height: 1px;
+    background: whitesmoke;
+    width: 180px;
+    
+}
+
+#sign-in .or span{
+    color: #ccc;
+    padding: 10px;
+}
+
+#showcase{
+     background-image: url(beautiful_snow_covered_trees_forest_reflection_on_lake_and_landscape_view_of_mountains_hd_winter.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     padding: 200px;
+     
+}
+
+#showcase .showcase-content {
+    text-align: center;
+    text-overflow: inherit;
+}
+
+ /* The footer styling */
+footer {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 15px;
+    
+}
+
+footer a{
+    color:#fff;
+
+}
+/* The primary button */
+.secondary-btn{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 2px;
+    font-weight: 500; 
+    background: none;
+    color: azure;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all;
+
+}
+
+.secondary-btn:hover{
+    border-color: rgb(163, 226, 241);
+    color: #fff;
+}
+
+/* The media query */
+
+@media(min-width: 1200px){
+    #left{
+        flex: 4;
+    }
+
+    #right{
+        flex: 6;
+    }
+}
